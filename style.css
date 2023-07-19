@@ -217,8 +217,7 @@ font-size: 30px;
 
 
 #ve{
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
+
     margin-left: 30px;
     margin-right: 30px;
     margin-top: 200px;
@@ -257,8 +256,7 @@ font-size: 30px;
  /* Hiển thị div khi đã cuộn trang đến */
 #xuatphat.active,
 #noio.active,
-#lichtrinh.active,
-#ve.active {
+#lichtrinh.active {
   opacity: 1;
 }
   
