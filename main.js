@@ -45,7 +45,7 @@ window.addEventListener('scroll', function() {
     var windowHeight = window.innerHeight;
 
     // Tính tỷ lệ tùy chỉnh (1/3) của chiều cao của cửa sổ trình duyệt
-    var scrollThreshold = windowHeight / 2;
+    var scrollThreshold = windowHeight / 1.5;
 
     // Lấy vị trí cuộn trang hiện tại
     var scrollPosition = window.scrollY;
