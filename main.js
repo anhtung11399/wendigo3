@@ -54,13 +54,13 @@ window.addEventListener('scroll', function() {
     var xuatPhatElement = document.getElementById('xuatphat');
     var noioElement = document.getElementById('noio');
     var lichTrinhElement = document.getElementById('lichtrinh');
-    var veElement = document.getElementById('ve');
+
 
     // Tính vị trí cuộn trang cần đạt đến để hiển thị các div
     var xuatPhatPosition = xuatPhatElement.offsetTop - scrollThreshold;
     var noioPosition = noioElement.offsetTop - scrollThreshold;
     var lichTrinhPosition = lichTrinhElement.offsetTop - scrollThreshold;
-    var vePosition = veElement.offsetTop - scrollThreshold;
+ 
 
     // Kiểm tra và thêm hoặc xóa lớp CSS 'active' cho từng div tương ứng
     if (scrollPosition >= xuatPhatPosition) {
@@ -78,11 +78,7 @@ window.addEventListener('scroll', function() {
     } else {
         lichTrinhElement.classList.remove('active');
     }
-    if (scrollPosition >= vePosition) {
-        veElement.classList.add('active');
-    } else {
-        veElement.classList.remove('active');
-    }
+
 });
 
 
