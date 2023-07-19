@@ -20,6 +20,7 @@ body {
     width: 100%;
 }
 #home{
+    position: relative;
     display: flex;
     justify-content: center;
     width: 100%;
@@ -42,7 +43,7 @@ body {
     height: 37%;
     position: absolute;
     left: 0;
-    top:48%;
+    bottom:0;
     background: url(./bg-slide.png) bottom center no-repeat;
 }
 header{
