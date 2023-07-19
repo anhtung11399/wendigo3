@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,800;0,900;1,200;1,400;1,600&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+#content{
+    width: 100%;
+}
+#home{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 600px;
+    background-image: url("https://wallpaperaccess.com/full/9444517.jpg");
+}
+.container{
+    margin-top: 3rem;
+    width: 100%;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* background-color: wheat; */
+}
+#home:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 224px;
+    position: absolute;
+    left: 0;
+    top:48%;
+    background: url(./bg-slide.png) bottom center no-repeat;
+}
+header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header p{
+    font-weight: 300;
+    font-size: 1.25rem;
+}
+
+header span{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: gold;
+}
+
+.time-container{
+    width: 80%;
+  align-self:center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.time-ct{
+    width: 20%;
+    text-align: center;
+    background-color: gold;
+    border-radius: 0.3rem;
+    margin: 0.3rem;
+}
+
+.num{
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+.time-ct span{
+    font-size: 0.91rem;
+    text-transform: lowercase;
+    color: teal;
+}
+
+.time-ct:last-child .num{
+    color: tomato;
+}
+
+
+
+#xuatphat{
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 200px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    height: 400px;
+}
+#vietjet{
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 30px;
+    width: 35%;
+    height: 100%;
+    background-image: url("./image.png");
+
+}
+#noidungxuatphat{
+    width: 48%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: 30px;
+}
+#noidungxuatphat h1{
+    text-align: center;
+color: black;
+font-size: 30px;
+}
+#noidungxuatphat p{
+    color: black;
+    font-size: 20px;
+}
+    
+
+
+
+
+#noio{
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 200px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    height: 400px;
+}
+#khachsan{
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 30px;
+    width: 35%;
+    height: 100%;
+    background-image: url("./hotel.png");
+
+}
+#noidungnoio{
+    width: 48%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: 30px;
+}
+#noidungnoio h2{
+    text-align: center;
+color: black;
+font-size: 30px;
+}
+#noidungnoio p{
+    color: black;
+    font-size: 20px;
+}
+  
+
+
+#lichtrinh{
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 200px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    height: 400px;
+}
+#anhanchoi{
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 30px;
+    width: 35%;
+    height: 100%;
+    background-image: url("./lich.png");
+
+}
+#noidunganchoi{
+    width: 48%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: 30px;
+}
+#noidunganchoi h3{
+    text-align: center;
+color: black;
+font-size: 30px;
+}
+#noidunganchoi p{
+    color: black;
+    font-size: 20px;
+}
+  
+
+
+
+
+
+#ve{
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 200px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    height: 400px;
+}
+#anhve{
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 30px;
+    width: 35%;
+    height: 100%;
+    background-image: url("./ve.png");
+
+}
+#noidungve{
+    width: 48%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: 30px;
+}
+#noidungve h4{
+    text-align: center;
+color: black;
+font-size: 30px;
+}
+#noidungve p{
+    color: black;
+    font-size: 20px;
+}
+  
+
+
+ /* Hiển thị div khi đã cuộn trang đến */
+#xuatphat.active,
+#noio.active,
+#lichtrinh.active,
+#ve.active {
+  opacity: 1;
+}
+  
+
+
+
+
+
+
+
+@media (max-width:300px) {
+    
+    .time-container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 100%;
+    }
+
+    .time-ct{
+        width: 40%;
+    }
+}
+
+
+
+
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+    .container{
+        height: 200px;
+    }
+
+    .time-container{
+        width: 80%;
+        align-self: center;
+    }
+    .time-ct{
+        width: 15%;
+        margin: 0 0.5rem;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .container{
+        max-width: 800px;
+    }
+}
